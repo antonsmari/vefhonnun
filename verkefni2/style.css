@@ -1,0 +1,21 @@
+body {
+    background-image: url('teal_paper.gif');
+}
+
+.body {
+    max-width: 80em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1em auto;
+    padding: 1em;
+    border: 2px solid black;
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.margin {
+    margin-left: 25px;
+}
