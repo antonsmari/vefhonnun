@@ -19,3 +19,10 @@ body {
 .margin {
     margin-left: 25px;
 }
+
+.colorful-bold-style {
+    color: pink;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-style: italic;
+}
