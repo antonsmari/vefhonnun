@@ -26,10 +26,27 @@ function removeClass(el, className)
 
 function swapClasses() {
     var body = document.getElementById('body');
+    var swap = document.getElementsByClassName('swap');
+
+    var split = window.location.href.split("/");
+    var page = split[split.length - 1];
+    var site = "Síða 2";
+    if (page == "index.html" || page == "index.html#") {
+        site = "Síða 1";
+    }
+
     if (hasClass(body, 'isometric')) {
+        swap[0].innerHTML = site + " - Isometric style";
+        if (swap[1] !== undefined) {
+            swap[1].innerHTML = site + " - Isometric style";
+        }
         addClass(body, 'hobbit');
         removeClass(body, 'isometric');
     } else {
+        swap[0].innerHTML = site + " - The Hobbit style";
+        if (swap[1] !== undefined) {
+            swap[1].innerHTML = site + " - The Hobbit style";
+        }
         addClass(body, 'isometric');
         removeClass(body, 'hobbit');
     }

@@ -5,9 +5,6 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -49,6 +46,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin-right: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 nav a.current {
