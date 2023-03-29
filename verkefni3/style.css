@@ -46,12 +46,19 @@ a {
     font-weight: bolder;
 }
 
+@font-face {
+    font-family: HobbitonBrushhand;
+    src: url(HobbitonBrushhand.ttf);
+}
+
 body.hobbit {
+    font-family: HobbitonBrushhand;
     background: url("the-hobbit.jpg");
     background-size: cover;
 }
 
 body.isometric {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e5e5f7;
     opacity: 0.8;
     background-image:  linear-gradient(30deg, #f74545 12%, transparent 12.5%, transparent 87%, #f74545 87.5%, #f74545), linear-gradient(150deg, #f74545 12%, transparent 12.5%, transparent 87%, #f74545 87.5%, #f74545), linear-gradient(30deg, #f74545 12%, transparent 12.5%, transparent 87%, #f74545 87.5%, #f74545), linear-gradient(150deg, #f74545 12%, transparent 12.5%, transparent 87%, #f74545 87.5%, #f74545), linear-gradient(60deg, #f7454577 25%, transparent 25.5%, transparent 75%, #f7454577 75%, #f7454577), linear-gradient(60deg, #f7454577 25%, transparent 25.5%, transparent 75%, #f7454577 75%, #f7454577);

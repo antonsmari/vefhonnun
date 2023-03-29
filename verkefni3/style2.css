@@ -40,7 +40,6 @@ section {
 }
 
 footer {
-    grid-row: 3;
     background: #333;
     color: #fff;
     padding: 10px;
@@ -59,6 +58,7 @@ nav a.current {
 header h1 {
     margin: 0;
     color: #000;
+    text-align: center;
 }
 
 .outer-container {
@@ -66,12 +66,35 @@ header h1 {
     margin: 0 auto;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+header > .grid-container > a {
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@font-face {
+    font-family: HobbitonBrushhand;
+    src: url(HobbitonBrushhand.ttf);
+}
+
 body.hobbit {
+    font-family: HobbitonBrushhand;
     background: url("the-hobbit.jpg");
     background-size: cover;
 }
 
 body.isometric {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e5e5f7;
     opacity: 0.8;
     background-image:  linear-gradient(30deg, #f74545 12%, transparent 12.5%, transparent 87%, #f74545 87.5%, #f74545), linear-gradient(150deg, #f74545 12%, transparent 12.5%, transparent 87%, #f74545 87.5%, #f74545), linear-gradient(30deg, #f74545 12%, transparent 12.5%, transparent 87%, #f74545 87.5%, #f74545), linear-gradient(150deg, #f74545 12%, transparent 12.5%, transparent 87%, #f74545 87.5%, #f74545), linear-gradient(60deg, #f7454577 25%, transparent 25.5%, transparent 75%, #f7454577 75%, #f7454577), linear-gradient(60deg, #f7454577 25%, transparent 25.5%, transparent 75%, #f7454577 75%, #f7454577);
