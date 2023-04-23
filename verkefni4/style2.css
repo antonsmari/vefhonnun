@@ -1,0 +1,118 @@
+.nav-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .nav-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-container1 {
+        grid-template-columns: repeat(2, 1fr);;
+    }
+    .grid-container2 {
+        grid-template-columns: repeat(2, 1fr);;
+    }
+    .grid-container3 {
+        grid-template-columns: repeat(2, 1fr);;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .grid-container1 {
+        grid-template-columns: repeat(3, 1fr);;
+    }
+    .grid-container2 {
+        grid-template-columns: repeat(4, 1fr);;
+    }
+    .grid-container3 {
+        grid-template-columns: repeat(5, 1fr);;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .outer-container {
+        margin: 0px auto;
+        max-width: 960px;
+    }
+}
+
+.item {
+    background: rgba(221, 221, 221, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: white;
+}
+
+main {
+    padding: 5px;
+    background-color: gray;
+}
+
+footer {
+    padding: 20px;
+    background-color: black;
+}
+
+a {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    background-color: gray;
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: HobbitonBrushhand;
+    src: url(HobbitonBrushhand.ttf);
+}
+
+body.hobbit {
+    font-family: HobbitonBrushhand;
+    background-image: url("the-hobbit.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+body.isometric {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  repeating-linear-gradient(45deg, #9445f7 25%, transparent 25%, transparent 75%, #9445f7 75%, #9445f7), repeating-linear-gradient(45deg, #9445f7 25%, #e5e5f7 25%, #e5e5f7 75%, #9445f7 75%, #9445f7);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+}
