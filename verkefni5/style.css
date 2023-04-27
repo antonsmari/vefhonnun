@@ -1,0 +1,60 @@
+img { 
+    max-width:100%;
+    height: auto;
+}
+
+.float {
+    float: left;
+}
+
+body {
+    margin: 0;
+    background-color: lightskyblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+footer {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+@media screen and (min-width: 37.5em) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 48em) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 80em) {
+    main {
+        max-width: 80em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    footer {
+        max-width: 80em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
