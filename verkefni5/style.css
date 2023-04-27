@@ -3,10 +3,6 @@ img {
     height: auto;
 }
 
-.float {
-    float: left;
-}
-
 body {
     margin: 0;
     background-color: lightskyblue;
@@ -20,6 +16,7 @@ main {
 }
 
 footer {
+    display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
 }
@@ -37,10 +34,6 @@ footer {
 @media screen and (min-width: 48em) {
     main {
         grid-template-columns: repeat(3, 1fr);
-    }
-    
-    footer {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
