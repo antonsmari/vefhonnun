@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: honeydew;
+    font-family: 'Poppins', sans-serif;
 }
 
 #embed-google-map {
@@ -116,20 +117,112 @@ tr:nth-child(even) {
     background-color: lightgray;
 }
 
-form,fieldset {
+.radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form {
+    background-color: #fff;
+    max-width: 80%;
+    margin: 15px auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+select option:first-child {
+    display: none;
+}
+
+textarea {
+    height: 10rem;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+section {
+    margin-right: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    width: 100%;
+}
+
+select {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.form {
     width: 100%;
 }
 
 input[type="text"] {
-    float: right;
+    width: 100%;
 }
 
 input[type="email"] {
-    float: right;
+    width: 100%;
 }
 
 input[type="tel"] {
-    float: right;
+    width: 100%;
 }
 
 #embed-google-map iframe {

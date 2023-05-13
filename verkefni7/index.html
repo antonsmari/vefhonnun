@@ -61,7 +61,7 @@
                         <iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/9PSXjr1gbjc?ecver=1&amp;iv_load_policy=1&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" frameborder="0"></iframe>
                     </div>
                 </section>
-                <section>
+                <section class="form">
                   <form action="" method="GET">
                     <fieldset>
                       <legend>Hafðu samband</legend>
@@ -71,7 +71,31 @@
                       <input required name="netfang" id="netfang" type="email" value="" placeholder="t.d. jon@jonsson.is"><br />
                       <label for="simi">Sími:</label>
                       <input required id="simi" name="simi" type="tel" pattern="[0-9]{7}" placeholder="t.d. 7778888"><br />
-                      
+                      <label for="ahugi">Áhugastaða:</label>
+                      <select id="ahugi" name="ahugi">
+                        <option value="cult">Sértrúarsafnaðarárátta</option>
+                        <option value="read">Marglesinn</option>
+                        <option value="beginner" selected="">Áhugamaður</option>
+                      </select>
+                      <div class="radio">
+                        <section>
+                          <input type="radio" id="LOTR" name="fandom" value="LOTR">
+                          <label for="LOTR">LOTR</label>	
+                        </section>
+                        <section>
+                          <input type="radio" id="The Hobbit" name="fandom" value="The Hobbit">
+                          <label for="The Hobbit">The Hobbit</label>	
+                        </section>
+                        <section>
+                          <input type="radio" id="The Silmarillion" name="fandom" value="The Silmarillion">
+                          <label for="The Silmarillion">The Silmarillion</label>	
+                        </section>
+                      </div>
+                      <textarea rows="10" placeholder="Skrifaðu skilaboð hér og við munum svara við fyrsta tækifæri."></textarea>
+                      <br />
+                      <input type="checkbox" id="frettabref" name="frettabref" value="frettabref">
+                      <label for="frettabref">Fá sent fréttabréf!</label><br />
+                      <input type="submit" value="Senda">
                     </fieldset>
                   </form>
                 </section>
