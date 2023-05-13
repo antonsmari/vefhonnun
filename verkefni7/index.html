@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Þetta er sjöunda verkefnið mitt!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Lato&family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        window.addEventListener("scroll", (event) => {
+            let scroll = this.scrollY;
+            console.log(scroll)
+            var x = document.getElementById("stt");
+
+            if (scroll == 0) {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#map">Kort</a>
+            <a href="#audio">Hljóðbútur</a>
+            <a href="#video">Myndband</a>
+            <a href="#list">Tolkien staðreyndir</a>
+        </nav>
+    </header>
+
+    <div id="map">
+        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Lake%20Pukaki+(The%20Hobbit)&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            <a href="https://www.maps.ie/distance-area-calculator.html">area maps</a>
+        </iframe>
+    </div>
+
+    <section id="main">
+        <main>
+            <div>
+                <h1>The Hobbit movie trioligy</h1>
+                <p>"The Hobbit" movie trilogy, directed by Peter Jackson, is a visually stunning and action-packed adaptation of J.R.R. Tolkien's classic novel. The trilogy is made up of three films: "The Hobbit: An Unexpected Journey," "The Hobbit: The Desolation of Smaug," and "The Hobbit: The Battle of the Five Armies."</p>
+                <p>In the first film, "The Hobbit: An Unexpected Journey," we are introduced to Bilbo Baggins, Gandalf, and a group of thirteen dwarves who are on a quest to reclaim their homeland from the dragon Smaug. Along the way, they encounter trolls, goblins, and a mysterious creature named Gollum, and Bilbo discovers a magical ring that will play a crucial role in the rest of the trilogy.</p>
+                <p>In "The Hobbit: The Desolation of Smaug," the group continues their journey through Middle-earth, facing new challenges such as giant spiders, shape-shifting skin-changers, and the dangerous and cunning Smaug himself. Meanwhile, the wizard Gandalf uncovers a sinister plot by the dark lord Sauron to wage war on Middle-earth.</p>
+                <p>The final film, "The Hobbit: The Battle of the Five Armies," sees the culmination of the quest to defeat Smaug and the ensuing battle between the dwarves, elves, men, and orcs for control of the treasure that lies beneath the Lonely Mountain. The film also ties in with the events of "The Lord of the Rings" trilogy, as we see the young hobbit Frodo receiving the ring from Bilbo.</p>
+                <p>Overall, the "Hobbit" movie trilogy is a thrilling and visually stunning adaptation of Tolkien's classic novel. While some fans criticized the addition of new characters and plot points, the films are still a must-watch for fans of epic fantasy and cinematic storytelling.</p>
+                <div id="audio">
+                    <audio controls>
+                        <source src="Chapter 01 - An Unexpected Party.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div id="video">
+                <section>
+                    <div id="embed-google-map">
+                        <iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/9PSXjr1gbjc?ecver=1&amp;iv_load_policy=1&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" frameborder="0"></iframe>
+                    </div>
+                </section>
+                <section>
+                  <form action="" method="GET">
+                    <fieldset>
+                      <legend>Hafðu samband</legend>
+                      <label for="nafn">Nafn:</label>
+                      <input required name="nafn" id="nafn" type="text" value="" placeholder="t.d. Jón Jónsson"><br />
+                      <label for="netfang">Netfang:</label>
+                      <input required name="netfang" id="netfang" type="email" value="" placeholder="t.d. jon@jonsson.is"><br />
+                      <label for="simi">Sími:</label>
+                      <input required id="simi" name="simi" type="tel" pattern="[0-9]{7}" placeholder="t.d. 7778888"><br />
+                      
+                    </fieldset>
+                  </form>
+                </section>
+            </div>
+            <div>
+                <section id="list">
+                  <h2>Tolkien fun facts</h2>
+                  <ul>
+                      <li>J.R.R. Tolkien was born in South Africa in 1892.</li>
+                      <li>"The Hobbit" was published in 1937.</li>
+                      <li>The main character of "The Hobbit" is Bilbo Baggins, a hobbit from the Shire.</li>
+                      <li>The wizard Gandalf plays a key role in "The Hobbit" and "The Lord of the Rings" trilogy.</li>
+                      <li>The dwarves in "The Hobbit" are on a quest to reclaim their homeland from the dragon Smaug.</li>
+                      <li>"The Hobbit" has been adapted into a movie trilogy directed by Peter Jackson.</li>
+                      <li>Tolkien created a detailed and extensive mythology for Middle-earth, including languages, histories, and cultures.</li>
+                      <li>"The Lord of the Rings" trilogy, set in the same world as "The Hobbit," was published in the 1950s.</li>
+                      <li>Tolkien was a professor of Anglo-Saxon at Oxford University and used his knowledge of mythology and language to inform his writing.</li>
+                      <li>Tolkien's books have had a huge influence on the fantasy genre and continue to be beloved by readers around the world.</li>
+                      <li>Stunning Lake Pukaki was chosen as the location for Laketown in The Hobbit: The Desolation of Smaug.</li>
+                  </ul>
+              </section>
+              <section id="table">
+                  <table>
+                      <thead>
+                        <tr>
+                          <th>Actor</th>
+                          <th>Year of Birth</th>
+                          <th>Role</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="Actor">Martin Freeman</td>
+                          <td data-label="Year of Birth">1971</td>
+                          <td data-label="Role">Bilbo Baggins</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">Ian McKellen</td>
+                          <td data-label="Year of Birth">1939</td>
+                          <td data-label="Role">Gandalf</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">Richard Armitage</td>
+                          <td data-label="Year of Birth">1971</td>
+                          <td data-label="Role">Thorin Oakenshield</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">Ken Stott</td>
+                          <td data-label="Year of Birth">1955</td>
+                          <td data-label="Role">Balin</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">Graham McTavish</td>
+                          <td data-label="Year of Birth">1961</td>
+                          <td data-label="Role">Dwalin</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">William Kircher</td>
+                          <td data-label="Year of Birth">1955</td>
+                          <td data-label="Role">Bifur</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">James Nesbitt</td>
+                          <td data-label="Year of Birth">1965</td>
+                          <td data-label="Role">Bofur</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">Stephen Hunter</td>
+                          <td data-label="Year of Birth">1968</td>
+                          <td data-label="Role">Bombur</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">Dean O'Gorman</td>
+                          <td data-label="Year of Birth">1976</td>
+                          <td data-label="Role">Fili</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">Aidan Turner</td>
+                          <td data-label="Year of Birth">1983</td>
+                          <td data-label="Role">Kili</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">John Callen</td>
+                          <td data-label="Year of Birth">1946</td>
+                          <td data-label="Role">Oin</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">Peter Hambleton</td>
+                          <td data-label="Year of Birth">1960</td>
+                          <td data-label="Role">Gloin</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">Gary Els</td>
+                          <td data-label="Year of Birth">N/A</td>
+                          <td data-label="Role">Yazneg</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Actor">Manu Bennett</td>
+                          <td data-label="Year of Birth">1969</td>
+                          <td data-label="Role">Azog the Defiler</td>
+                        </tr>
+                      </tbody>
+                  </table>
+                  <br />
+              </section>
+            </div>
+        </main>
+    </section>
+
+    <footer>
+        <p><a href="https://www.imdb.com/title/tt0903624/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_the%2520hobbit">The Hobbit: An Unexpected Journey</a></p>
+        <p><a href="https://www.imdb.com/title/tt1170358/?ref_=nv_sr_srsg_3_tt_7_nm_1_q_the%2520hobbit">The Hobbit: The Desolation of Smaug</a></p>
+        <p><a href="https://www.imdb.com/title/tt2310332/?ref_=nv_sr_srsg_6_tt_7_nm_1_q_the%2520hobbit">The Hobbit: The Battle of the Five Armies</a></p>
+    </footer>
+
+    <div id="stt" class="scroll-to-top" style="display: none">
+        <a href="#map"><img src="icontop.svg" /></a>
+    </div>
+</body>
+</html>
