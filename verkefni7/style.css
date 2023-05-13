@@ -160,10 +160,6 @@ textarea {
     margin-bottom: 1rem;
 }
 
-select option:first-child {
-    display: none;
-}
-
 textarea {
     height: 10rem;
 }
