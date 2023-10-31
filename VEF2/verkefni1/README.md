@@ -1,19 +1,25 @@
-# Vefhönnun 2 - Verkefni 1
+# Vefhönnun 2 - Verkefni 1 🌐
 
-# Myndir
+## Þema: Ráðstefna um tölvuteiknaðar myndir í RPG stíl 🧙
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;">
+# Sitemap
 
-  <div><img src="1.webp" style="width:100%;"/></div>
-  <div><img src="2.webp" style="width:100%;"/></div>
-  <div><img src="3.webp" style="width:100%;"/></div>
-  <div><img src="4.webp" style="width:100%;"/></div>
-  <div><img src="5.webp" style="width:100%;"/></div>
-  <div><img src="6.webp" style="width:100%;"/></div>
-  <div><img src="7.webp" style="width:100%;"/></div>
-  <div><img src="8.webp" style="width:100%;"/></div>
+![Sitemap]("sitemap.png")
 
-</div>
+# Wireframe
+
+![Wireframe]("wireframe.png")
+
+# Myndir 🖼️
+
+![Mynd 1]("1.webp")
+![Mynd 2]("2.webp")
+![Mynd 3]("3.webp")
+![Mynd 4]("4.webp")
+![Mynd 5]("5.webp")
+![Mynd 6]("6.webp")
+![Mynd 7]("7.webp")
+![Mynd 8]("8.webp")
 
 # Lita og leturval 🎨
 
