@@ -2,11 +2,11 @@
 
 ## Þema: Ráðstefna um tölvuteiknaðar myndir í RPG stíl 🧙
 
-# Sitemap
+# Sitemap 📄
 
 ![Sitemap](sitemap.png)
 
-# Wireframe
+# Wireframe 🗺️
 
 ![Wireframe](wireframe.png)
 
