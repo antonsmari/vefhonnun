@@ -27,18 +27,18 @@
 
 ### Aðal litir 🏴‍☠️
 
-1. **Aðal bakgrunnur**: [`#F0F0F0`](https://www.color-hex.com/color/f0f0f0)
-2. **Aðal texti**: [`#333333`](https://www.color-hex.com/color/333333)
-3. **Annar texti**: [`#777777`](https://www.color-hex.com/color/777777)
-4. **Áherslulitur 1**: [`#00A4CC`](https://www.color-hex.com/color/00a4cc)
-5. **Áherslulitur 2**: [`#FFC300`](https://www.color-hex.com/color/ffc300)
+1. **Aðal bakgrunnur**: ![color](https://readme-swatches.vercel.app/F0F0F0) [`#F0F0F0`](https://www.color-hex.com/color/f0f0f0)
+2. **Aðal texti**: ![color](https://readme-swatches.vercel.app/333333) [`#333333`](https://www.color-hex.com/color/333333)
+3. **Annar texti**: ![color](https://readme-swatches.vercel.app/777777) [`#777777`](https://www.color-hex.com/color/777777)
+4. **Áherslulitur 1**: ![color](https://readme-swatches.vercel.app/00A4CC) [`#00A4CC`](https://www.color-hex.com/color/00a4cc)
+5. **Áherslulitur 2**: ![color](https://readme-swatches.vercel.app/FFC300) [`#FFC300`](https://www.color-hex.com/color/ffc300)
 
 ### Aðrir litir 🏳️‍🌈
 
-1. **Info**: [`#007BFF`](https://www.color-hex.com/color/007bff)
-2. **Success**: [`#28A745`](https://www.color-hex.com/color/28a745)
-3. **Warning**: [`#FFC107`](https://www.color-hex.com/color/ffc107)
-4. **Danger**: [`#DC3545`](https://www.color-hex.com/color/dc3545)
+1. **Info**: ![color](https://readme-swatches.vercel.app/007BFF) [`#007BFF`](https://www.color-hex.com/color/007bff)
+2. **Success**: ![color](https://readme-swatches.vercel.app/28A745) [`#28A745`](https://www.color-hex.com/color/28a745)
+3. **Warning**: ![color](https://readme-swatches.vercel.app/FFC107) [`#FFC107`](https://www.color-hex.com/color/ffc107)
+4. **Danger**: ![color](https://readme-swatches.vercel.app/DC3545) [`#DC3545`](https://www.color-hex.com/color/dc3545)
 
 ## Leturval 📜
 
