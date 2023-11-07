@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table Example</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        /* Default styles for small screens: stack table cells */
+		.table-responsive-stack td,
+		.table-responsive-stack th {
+			display: block;
+			text-align: right; /* Align text to the right on small screens */
+			padding-left: 50%; /* Add padding to make space for the labels */
+			position: relative;
+		}
+
+		.table-responsive-stack td:before {
+			content: attr(data-label); /* Use the data-label attribute for the content before the cell */
+			position: absolute;
+			left: 0;
+			width: 50%; /* Label width */
+			padding-left: 15px; /* Padding for the label */
+			font-size: 15px; /* Font size for the label */
+			text-align: left; /* Align the label text to the left */
+		}
+
+		.table-responsive-stack thead {
+			display: none; /* Hide the thead on small screens */
+		}
+
+		/* Media query for larger screens */
+		@media (min-width: 768px) {
+			.table-responsive-stack td,
+			.table-responsive-stack th {
+				display: table-cell; /* Display as table cells on larger screens */
+				padding-left: 0; /* Remove the padding as it's no longer needed */
+			}
+
+			.table-responsive-stack td:before {
+				content: none; /* Remove the content before the cell */
+			}
+
+			.table-responsive-stack thead {
+				display: table-header-group; /* Show the thead on larger screens */
+			}
+		}
+
+    </style>
+</head>
+<body>
+
+<div class="table-responsive-stack">
+   <table class="table">
+      <thead>
+         <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td data-label="ID">1</td>
+            <td data-label="Name">Anton</td>
+            <td data-label="Email">anton@fail.is</td>
+            <td data-label="City">Reykjavík</td>
+         </tr>
+         <!-- Repeat for other table rows -->
+      </tbody>
+   </table>
+</div>
+
+<!-- Link to Bootstrap JavaScript -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #001;
+}
+
+#sun {
+    width: 100px;
+    height: 100px;
+    background: #f90;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: sunrise 10s ease-in-out infinite alternate;
+}
+
+@keyframes sunrise {
+    0% {
+        bottom: -50px;
+        background: #f90;
+    }
+    50% {
+        bottom: 50%;
+        background: #fc0;
+    }
+    100% {
+        bottom: 100%;
+        background: #f90;
+    }
+}
+
+a {
+    position: absolute;
+    color: white !important;
+    font-size: 24px;
+    top: 15px;
+    left: 15px;
+}

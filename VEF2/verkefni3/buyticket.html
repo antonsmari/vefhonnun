@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Layout</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 ">
+            <h3 class="center">
+                Conference of AI generated RPG style images
+            </h3>
+        </div>
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-md navbar-light bg-dark border">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="../img/logo.webp" width="128" height="128"></a>
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-auto">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="aboutus.html">About us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="images.html">Images</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="gameregister.html"><i class="fas fa-clover fa-shake"></i> Lottery</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="buyticket.html">Ticket sale!</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="sun.html">Sun</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Register for a ticket</h2>
+            <h5 class="text-center mb-4">Tickets will be available in your name in the lobby when you show up!</h5>
+            <div class="row">
+    
+                <div class="col-md-12">
+                    <form>
+                        <fieldset class="mb-3">
+                            <legend>Registration form</legend>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                        
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+                            </div>
+                        
+                            <div class="mb-3">
+                                <label for="birthdate" class="form-label">Birth Date:</label>
+                                <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                            </div>
+                        
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Telephone:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+354-123-4567" required>
+                            </div>
+                        
+                            <div class="mb-3">
+                                <label class="form-label">Ticket Tier:</label>
+                                <div class="form-check">
+                                    <input type="radio" checked class="form-check-input" id="basic" name="subscription" value="basic">
+                                    <label for="basic" class="form-check-label">Basic (10 $)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="premium" name="subscription" value="premium">
+                                    <label for="premium" class="form-check-label">Premium (50 $)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="premium" name="subscription" value="premium">
+                                    <label for="premium" class="form-check-label">VIP (500 $)</label>
+                                </div>
+                            </div>
+                        
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terms" name="terms">
+                                <label for="terms" class="form-check-label">Accept Terms & Conditions:</label>
+                            </div>
+                        
+                            <div class="mb-3">
+                                <label for="country" class="form-label">Country of origin:</label>
+                                <select id="country" class="form-select" name="country">
+                                    <option value="iceland">Iceland</option>
+                                    <option value="usa">USA</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="uae">UAE</option>
+                                    <option value="palestine">Palestine</option>
+                                </select>
+                            </div>
+                        
+                            <div class="mb-3">
+                                <label for="comments" class="form-label">Comments:</label>
+                                <textarea id="comments" class="form-control" name="comments"></textarea>
+                            </div>
+                        </fieldset>
+                    
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Our Fabulous Company</h5>
+                    <p>
+                        We started our journey in the mystical lands of Iceland and since then, we've been making waves! Or maybe that's just the geysers? Anyway, we're cool. Trust us.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="aboutus.html" class="text-white"><i class="fas fa-users"></i> About us</a></li>
+                        <li><a href="images.html" class="text-white"><i class="fas fa-images"></i> Images</a></li>
+                        <li><a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fas fa-envelope"></i> Contact us</a></li>
+                        <li><a href="gameregister.html" class="text-white"><i class="fas fa-clover fa-shake"></i> Lottery</a></li>
+                        <li><a href="buyticket.html" class="text-white"><i class="fas fa-ticket-alt"></i> Ticket sale!</a></li>
+                        <li><a href="sun.html" class="text-white"><i class="fas fa-sun"></i> Sun</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>
+                        Address: 123 Frosty St, Reykjavík <br>
+                        Phone: (123) 456-7890 <br>
+                        Email: chilly@icelandmail.is
+                    </p>
+                    <p>PS: Don't send us letters during a snowstorm. That's a rookie mistake.</p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col text-center">
+                    &copy; 2023 Fabulous Company Inc. - Embracing the chill since... well, forever.
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Contact us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <fieldset class="mb-3">
+                        <legend>Contact form</legend>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telephone (Optional):</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+354-123-4567">
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject:</label>
+                            <select id="subject" class="form-select" name="subject">
+                                <option value="">Choose...</option>
+                                <option value="inquiry">General Inquiry</option>
+                                <option value="support">Support Request</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                    
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message:</label>
+                            <textarea id="message" class="form-control" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                        </div>
+                    </fieldset>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

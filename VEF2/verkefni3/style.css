@@ -1,0 +1,175 @@
+/* Basic CSS */
+
+body {
+    background-color: #002B49;
+    color: white;
+}
+
+nav > div > div > div > div > div > ul > li > a {
+    color: pink !important;
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    font-weight: bolder;
+}
+
+footer {
+    border: 1px solid white;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #e0e0e0 !important;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tahoma', serif;
+}
+
+p, li {
+    font-family: 'Arial', sans-serif;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+table > tbody > tr > td, table > thead > tr > th {
+    color: #ffffff;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+form {
+    border: 1px solid white;
+    padding: 25px;
+    background-color: #d19381;
+}
+
+.accordion-body {
+    background-color: #819ad1;
+}
+
+.modal {
+    color: black;
+}
+
+legend {
+    text-align: center;
+}
+
+.py-5 {
+    background-color: #874545;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 15px;
+}
+
+/* CSS based slideshow */
+
+.css-slideshow {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.css-slideshow figure {
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css-slideshow img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.css-slideshow figure:first-child {
+    opacity: 1;
+}
+
+@keyframes slideshow {
+    0% { opacity: 1; }
+    20% { opacity: 1; }
+    25% { opacity: 0; }
+    95% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.css-slideshow figure {
+    animation: slideshow 15s infinite;
+}
+
+.css-slideshow figure:nth-child(1) {
+    animation-delay: 0s;
+}
+.css-slideshow figure:nth-child(2) {
+    animation-delay: 5s;
+}
+.css-slideshow figure:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.no-cssanimations .css-slideshow figure {
+    opacity: 1;
+}
+
+/* Table CSS */
+
+.table-responsive td,
+.table-responsive th {
+    display: block;
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+}
+
+.table-responsive td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.table-responsive thead {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .table-responsive td,
+    .table-responsive th {
+        display: table-cell;
+        padding-left: 0;
+    }
+
+    .table-responsive td:before {
+        content: none;
+    }
+
+    .table-responsive thead {
+        display: table-header-group;
+    }
+}
