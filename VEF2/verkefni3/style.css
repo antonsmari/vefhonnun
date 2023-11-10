@@ -136,6 +136,10 @@ legend {
 
 /* Table CSS */
 
+tbody tr:nth-child(odd) {
+    background-color: rgba(10, 10, 10, 10)
+}
+
 .table-responsive td,
 .table-responsive th {
     display: block;
